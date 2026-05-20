@@ -1,38 +1,191 @@
-.App {
+:root {
+  --cream: #f8f1e7;
+  --ink: #2a2420;
+  --muted: #6b5d52;
+  --accent: #8a5a3b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua',
+    Georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.invite {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 48px 28px 64px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.invite-image {
+  display: block;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 40px;
+  box-shadow: 0 2px 18px rgba(60, 40, 20, 0.08);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.invite-title {
+  font-family: 'Cormorant Garamond', 'Hoefler Text', 'Baskerville', Garamond,
+    'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  letter-spacing: 0.01em;
+  margin: 0 0 28px;
+  line-height: 1.15;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.invite-note {
+  font-style: italic;
+  color: var(--muted);
+  margin: 0 0 40px;
+  padding: 0 8px;
+}
+
+.invite-note-en,
+.invite-note-de,
+.invite-note-source {
+  display: block;
+}
+
+.invite-note-de {
+  margin-top: 4px;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.invite-note-source {
+  margin-top: 2px;
+  font-size: 0.72rem;
+  font-style: normal;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
+
+.invite-when {
+  font-size: 1.15rem;
+  margin: 0 0 24px;
+  letter-spacing: 0.02em;
+}
+
+.invite-dot {
+  color: var(--muted);
+  margin: 0 6px;
+}
+
+.invite-where {
+  font-style: normal;
+  margin: 0 0 44px;
+}
+
+.invite-where a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(138, 90, 59, 0.35);
+  padding-bottom: 2px;
+}
+
+.invite-where a:hover,
+.invite-where a:focus {
+  border-bottom-color: var(--accent);
+}
+
+.invite-menu {
+  list-style: none;
+  margin: 0 0 44px;
+  padding: 28px 0;
+  border-top: 1px solid rgba(60, 40, 20, 0.12);
+  border-bottom: 1px solid rgba(60, 40, 20, 0.12);
+}
+
+.invite-menu li {
+  margin: 0;
+  padding: 6px 0;
+  font-size: 1.05rem;
+}
+
+.invite-thanks {
+  font-style: italic;
+  color: var(--muted);
+  margin: 0 0 18px;
+}
+
+.invite-signature {
+  font-family: 'Snell Roundhand', 'Apple Chancery', 'Zapfino',
+    'Brush Script MT', cursive;
+  font-size: 1.6rem;
+  color: var(--accent);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.invite-rsvp-group {
+  margin-top: 36px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 14px;
+}
+
+.invite-rsvp-caption {
+  font-family: 'Cormorant Garamond', 'Hoefler Text', 'Baskerville', Garamond,
+    'Times New Roman', serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--accent);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.invite-rsvp-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.invite-icon {
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid rgba(138, 90, 59, 0.35);
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.invite-icon:hover,
+.invite-icon:focus {
+  background: var(--accent);
+  color: var(--cream);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(138, 90, 59, 0.25);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 380px) {
+  .invite {
+    padding: 36px 20px 48px;
   }
-  to {
-    transform: rotate(360deg);
+  .invite-title {
+    font-size: 2.1rem;
   }
 }
