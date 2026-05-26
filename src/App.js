@@ -24,7 +24,7 @@ const invite = {
     telegram: 'gebab88',
     telegramLabel: 'Message on Telegram',
   },
-  imageSrc: '/house.svg',
+  imageSrc: `${process.env.PUBLIC_URL}/house.svg`,
   imageAlt: 'A small cozy house at dusk with warm-lit windows',
 };
 
