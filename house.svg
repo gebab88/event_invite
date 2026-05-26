@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="A small cozy house at dusk with warm-lit windows">
+  <defs>
+    <radialGradient id="dusk" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#fbeed6" />
+      <stop offset="55%" stop-color="#efd2a8" />
+      <stop offset="100%" stop-color="#c79a6a" />
+    </radialGradient>
+    <linearGradient id="lawn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a8a55" />
+      <stop offset="100%" stop-color="#4d5a36" />
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4e3c8" />
+      <stop offset="100%" stop-color="#d9bf95" />
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a3f2a" />
+      <stop offset="100%" stop-color="#5a2c1d" />
+    </linearGradient>
+    <radialGradient id="window" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#fff6c8" />
+      <stop offset="70%" stop-color="#f4c46a" />
+      <stop offset="100%" stop-color="#b8853a" />
+    </radialGradient>
+  </defs>
+
+  <!-- Sky / background -->
+  <circle cx="100" cy="100" r="100" fill="url(#dusk)" />
+
+  <!-- Distant hill -->
+  <path d="M -10 150 Q 60 120 100 135 T 220 138 L 220 160 L -10 160 Z" fill="#9aa973" opacity="0.55" />
+
+  <!-- Lawn -->
+  <path d="M -10 150 Q 60 145 100 150 T 220 150 L 220 220 L -10 220 Z" fill="url(#lawn)" />
+
+  <!-- Moon -->
+  <circle cx="150" cy="55" r="10" fill="#fdf2c4" opacity="0.9" />
+  <circle cx="150" cy="55" r="16" fill="#fdf2c4" opacity="0.18" />
+
+  <!-- House body -->
+  <rect x="60" y="100" width="80" height="55" fill="url(#wall)" />
+
+  <!-- Roof -->
+  <path d="M 52 102 L 100 65 L 148 102 Z" fill="url(#roof)" />
+
+  <!-- Chimney -->
+  <rect x="118" y="72" width="10" height="20" fill="#5a2c1d" />
+
+  <!-- Smoke -->
+  <g fill="#f0e3cc" opacity="0.6">
+    <circle cx="124" cy="62" r="4" />
+    <circle cx="130" cy="55" r="5" />
+    <circle cx="125" cy="46" r="6" />
+    <circle cx="135" cy="40" r="5" />
+  </g>
+
+  <!-- Door -->
+  <rect x="92" y="125" width="16" height="30" fill="#5a3a20" />
+  <rect x="92" y="125" width="16" height="30" fill="none" stroke="#3d2715" stroke-width="0.8" />
+  <circle cx="104" cy="141" r="0.9" fill="#e9c97a" />
+
+  <!-- Windows (warm glow) -->
+  <g>
+    <rect x="68" y="112" width="16" height="14" fill="url(#window)" />
+    <path d="M 76 112 L 76 126 M 68 119 L 84 119" stroke="#7a4f1c" stroke-width="0.8" />
+    <rect x="68" y="112" width="16" height="14" fill="none" stroke="#7a4f1c" stroke-width="1" />
+  </g>
+  <g>
+    <rect x="116" y="112" width="16" height="14" fill="url(#window)" />
+    <path d="M 124 112 L 124 126 M 116 119 L 132 119" stroke="#7a4f1c" stroke-width="0.8" />
+    <rect x="116" y="112" width="16" height="14" fill="none" stroke="#7a4f1c" stroke-width="1" />
+  </g>
+
+  <!-- Window glow halos -->
+  <g opacity="0.3">
+    <ellipse cx="76" cy="119" rx="16" ry="10" fill="#fff1b8" />
+    <ellipse cx="124" cy="119" rx="16" ry="10" fill="#fff1b8" />
+  </g>
+
+  <!-- Path -->
+  <path d="M 100 155 L 96 175 L 104 175 Z" fill="#b8a378" opacity="0.6" />
+  <path d="M 100 175 L 92 195 L 108 195 Z" fill="#b8a378" opacity="0.5" />
+
+  <!-- Tree left -->
+  <rect x="34" y="135" width="3" height="18" fill="#4a3520" />
+  <circle cx="35.5" cy="132" r="11" fill="#536a35" />
+  <circle cx="30" cy="128" r="7" fill="#6a8042" />
+  <circle cx="41" cy="130" r="7" fill="#475c2c" />
+
+  <!-- Tree right -->
+  <rect x="163" y="138" width="3" height="15" fill="#4a3520" />
+  <circle cx="164.5" cy="136" r="9" fill="#536a35" />
+  <circle cx="160" cy="132" r="6" fill="#6a8042" />
+  <circle cx="169" cy="134" r="6" fill="#475c2c" />
+
+  <!-- Small flowers -->
+  <circle cx="50" cy="158" r="1.6" fill="#d97a5a" />
+  <circle cx="55" cy="162" r="1.4" fill="#e6a76a" />
+  <circle cx="148" cy="160" r="1.6" fill="#d97a5a" />
+  <circle cx="153" cy="163" r="1.4" fill="#e6a76a" />
+</svg>
